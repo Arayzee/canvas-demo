@@ -49,7 +49,7 @@
     let canvas = document.getElementById("canvas")
     let width = document.documentElement.clientWidth
     let height = document.documentElement.clientHeight
-    let offset = 0.1 * width
+    let offset = width < height ? 0.1 * width : 0.1 * height
     canvas.width = width - 2 * offset
     canvas.height = height - 2 * offset
 
